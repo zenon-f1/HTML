@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Div as Container</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .outer-box {
+                display: flex;
+            }
+            .box {
+                height: 100px;
+                width: 200px;
+                margin: 2rem;
+                background-color: violet;
+                border-radius: 10px;
+                border-style: none;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: sans-serif;
+                letter-spacing: 1px;
+            }
+            .box2 {
+                background-color: blueviolet;
+            }
+            .box3 {
+                background-color: burlywood;
+            }
+            .box4 {
+                background-color: crimson;
+            }
+            .box5 {
+                background-color: coral;
+            }
+            .box6 {
+                background-color: lightseagreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer-box">
+            <div class="box box1">Box 1</div>
+            <div class="box box2">Box 2</div>
+            <div class="box box3">Box 3</div>
+            <div class="box box4">Box 4</div>
+            <div class="box box5">Box 5</div>
+            <div class="box box6">Box 6</div>
+        </div>
+    </body>
+</html>

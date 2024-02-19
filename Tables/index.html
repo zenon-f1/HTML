@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        table,tr,th,td{
+            border: 1px solid black;
+            padding: 2px;
+            border-radius: 3px;
+            text-align: center;
+        }
+        table{
+            background-color: rgb(185, 107, 6);
+            width: 500px;
+            height: 180px;
+        }
+        tr{
+            background-color: rgb(255, 30, 158);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin: 10px;padding-bottom: 2px; border-bottom: 2px solid black;">Simple Company Table</h1>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Robin</td>
+            <td>Mumbai</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+    </table>
+</body>
+</html>

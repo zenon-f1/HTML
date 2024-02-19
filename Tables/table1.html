@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                font-family: sans-serif;
+            }
+            table,
+            th,
+            td {
+                border: 1px solid #222;
+                padding: 5px;
+                text-align: left;
+                width: 400px;
+                margin-bottom: 50px;
+            }
+            th {
+                text-align: center;
+            }
+            .savings {
+                border-spacing: 5px;
+            }
+            /* tr:nth-child(even) {
+                background-color: rgba(5, 239, 110, 0.4);
+            }
+
+            th:nth-child(even),
+            td:nth-child(even) {
+                background-color: rgba(219, 246, 16, 0.4);
+            } */
+            td:hover {
+                background-color: rgb(248, 161, 10);
+            }
+            th:hover {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>
+                Data of Peoples
+            </caption>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+        <table>
+            <caption>
+                Data of Peoples
+            </caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>Carey</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>45</td>
+            </tr>
+        </table>
+        <table class="savings">
+            <caption>
+                Monthly Savings
+            </caption>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Febraury</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$50</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Jill</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>22222-66666</td>
+            </tr>
+            <tr>
+                <td>88888-22222</td>
+            </tr>
+        </table>
+    </body>
+</html>
