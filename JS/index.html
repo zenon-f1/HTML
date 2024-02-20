@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Intro to Js in Html</title>
+        <style></style>
+    </head>
+    <body>
+        <h1 style="font-family: sans-serif">Click here to know the date...</h1>
+        <button onclick="getDate()">Click Here</button>
+        <p id="date"></p>
+        <img src="/pexels-pixabay-55748.jpg" alt="" id="image" width="400px" />
+        <script>
+            function getDate() {
+                const t = document.getElementById('date');
+                t.innerHTML = Date();
+                t.style.fontFamily = 'Helvetica';
+                t.style.fontSize = '1.1rem';
+                t.style.color = 'crimson';
+            }
+            document.getElementById('image').src = '/pexels-pixabay-87452.jpg';
+        </script>
+        <!-- if any browser does not supports js or disabled  -->
+        <noscript
+            >Your brwoser doesn't support js or it is disabled...</noscript
+        >
+    </body>
+</html>

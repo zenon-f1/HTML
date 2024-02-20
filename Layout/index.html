@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple layout</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: cadetblue;
+                padding: 30px;
+                font-size: 35px;
+                text-align: center;
+                color: #fff;
+            }
+            .container {
+                display: flex;
+            }
+            .nav {
+                width: 30%;
+                padding: 20px;
+                background-color: rgb(227, 227, 227);
+            }
+            .nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .nav a {
+                text-decoration: none;
+                color: white;
+                margin: 2.1rem;
+                padding: 10px 25px;
+                border: 2px solid black;
+                border-radius: 5px;
+                background-color: black;
+            }
+            .content {
+                padding: 40px;
+                width: 70%;
+            }
+            .content h1 {
+                font-size: 3rem;
+            }
+            .content p {
+                padding-top: 2rem;
+                font-size: 1rem;
+            }
+            footer {
+                text-align: center;
+                background-color: blueviolet;
+                padding: 20px;
+                font-size: 25px;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header Section</h1>
+        </header>
+        <main>
+            <div class="container">
+                <div class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Products</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="content">
+                    <h1 class="heading">Content</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Quaerat aperiam harum ullam corrupti laudantium,
+                        voluptate architecto reiciendis itaque ipsam officiis
+                        praesentium, natus eligendi eius perspiciatis, provident
+                        delectus animi voluptates! Blanditiis!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Quaerat aperiam harum ullam corrupti laudantium,
+                        voluptate architecto reiciendis itaque ipsam officiis
+                        praesentium, natus eligendi eius perspiciatis, provident
+                        delectus animi voluptates! Blanditiis!
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </body>
+</html>
