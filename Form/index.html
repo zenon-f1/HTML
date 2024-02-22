@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forms</title>
+        <style>
+            * {
+                font-family: sans-serif;
+                background-color: #1d2a35;
+                color: #fff;
+            }
+            input {
+                margin: 5px;
+                border: 2px solid #fff;
+                background-color: #fff;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Text Fields:</h1>
+        <form
+            action=""
+            target="_blank"
+            method="get"
+            autocomplete="on"
+            novalidate
+        >
+            <label for="fname">First Name: </label>
+            <input type="text" placeholder="John" id="fname" name="fname" />
+            <br />
+            <label for="sname">Second Name: </label>
+            <input type="text" id="sname" name="sname" value="Doe" /> <br />
+            <input type="submit" value="Submit" />
+        </form>
+        <h1>Radio Buttons:</h1>
+        <p>Choose your favorite phone:</p>
+        <form action="" target="_self" method="post">
+            <input type="radio" name="fav_os" id="linux" />
+            <lable for="linux">Linux</lable><br />
+            <input type="radio" name="fav_os" id="android" checked />
+            <label for="android">Android</label><br />
+            <input type="radio" name="fav_os" id="ios" />
+            <label for="ios">iOS</label><br />
+            <input type="submit" value="Click Here" />
+        </form>
+        <h1>Checkboxes:</h1>
+        <p>WHich vehicle do you own?</p>
+        <form action="">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Car" />
+            <label for="vehicle1">I have a Car.</label> <br />
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Bike" />
+            <label for="vehicle2">I have a Bike.</label> <br />
+            <input
+                type="checkbox"
+                id="vehicle3"
+                name="vehicle3"
+                value="Scooter"
+            />
+            <label for="vehicle3">I have a Scooter.</label><br />
+            <input type="button" value="OK" />
+            <input type="submit" value="Done" />
+        </form>
+        <h1>Select:</h1>
+        <form action="">
+            <label for="cars">Choose a Car: </label>
+            <select name="cars" id="cars" size="1" multiple>
+                <!-- we can select multiple values-->
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="porsche">Porche</option>
+                <option value="lambhorgini">Lambhorgini</option>
+                <option value="ferrari" selected>Ferrari</option>
+                <!-- to make selected ferrari default-->
+            </select>
+        </form>
+        <h1>Textarea:</h1>
+        <form action="">
+            <textarea
+                name="text"
+                id="text"
+                cols="40"
+                rows="10"
+                style="background-color: white; color: black"
+            >
+Write something about yourself...</textarea
+            >
+        </form>
+        <h1>Button:</h1>
+        <input
+            type="button"
+            onclick="alert('Hello, World!')"
+            value="Click Me"
+        />
+        <h1>Fieldset And Legend</h1>
+        <form action="">
+            <fieldset>
+                <legend>Feedback Type:</legend>
+                <input
+                    type="radio"
+                    id="comment"
+                    name="feedback"
+                    value="Comment"
+                    checked
+                />
+                <label for="feedback">Comments</label>
+                <input
+                    type="radio"
+                    id="suggestion"
+                    name="feedback"
+                    value="Suggestion"
+                />
+                <label for="feedback">Suggestion</label>
+                <input
+                    type="radio"
+                    id="question"
+                    name="feedback"
+                    value="Question"
+                />
+                <label for="feedback">Question</label><br />
+                <p>Describe Your Feedback</p>
+                <textarea
+                    name="feed"
+                    id="feed"
+                    cols="50"
+                    rows="10"
+                    style="margin-top: 5px"
+                ></textarea>
+            </fieldset>
+        </form>
+        <h1>Data List:</h1>
+        <form action="">
+            <input list="browsers" name="browser" />
+            <datalist id="browsers">
+                <option value="Edge"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <input type="submit" />
+        </form>
+    </body>
+</html>
